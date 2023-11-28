@@ -5,26 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="assets/images/images-home.png" type="image/png">
   <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/responsive.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
   <title>WeaTrack</title>
 </head>
 <body>
-<header class="app-bar">
-  <div class="app-bar__menu">
-    <button id="hamburgerButton">☰</button>
-  </div>
-  <div class="app-bar__brand">
-    <h1>WeaTrack</h1>
-  </div>
-  <nav id="navigationDrawer" class="app-bar__navigation">
-    <ul>
-      <li><a href="index.html">Beranda</a></li>
-      <li><a href="berita.html">Berita</a></li>
-      <li><a href="cuaca.html">Cuaca</a></li>
-      <li><a href="tentang.html">Tentang</a></li>
-    </ul>
-  </nav>
+
+  <header class="header">
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">WeaTrack</a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="berita.html" class="nav-link">Berita</a>
+            </li>
+            <li class="nav-item">
+                <a href="cuaca.html" class="nav-link">Cuaca</a>
+            </li>
+            <li class="nav-item">
+                <a href="tentang.html" class="nav-link">Tentang</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
 </header>
+
 <div class="jumbotron">
   <div class="jumbotron-inner">
       <h1 class="jumbotron-title">WeaTrack</h1>
@@ -33,142 +43,11 @@
   </div>
   <img src="assets/images/images-home.png" alt="Illustration" class="illustration-image">
 </div>
-<div class="news-group">
-  <h1 class="news-title">Berita Terkini</h1>
-  <p class="news-tagline">Informasi dan berita terkait cuaca terkini</p>
-</div>
-<!-- Card section -->
-<div class="card-container">
-  <!-- Card 1 -->
-  <div class="card">
-    <img src="assets/card-image/berita-1.jpg" alt="Berita 1">
-    <h4 class="card-title">BMKG: Sejumlah wilayah Indonesia Bakal Diguyur Hujan Lebat</h4>
-    <p class="card-description">Badan Meteorologi, Klimatologi, dan Geofisika (BMKG) mengeluarkan peringatan dini prakiraan hujan lebat disertai kilat dan angin kencang yang berpotensi terjadi di sejumlah wilayah Indonesia</p>
-    <a href="https://beritalingkungan.com/category/berita-cuaca/" target="_blank">Baca Selengkapnya</a>
-  </div>
 
-  <!-- Card 2 -->
-  <div class="card">
-    <img src="assets/card-image/berita-2.jpeg" alt="Berita 2">
-    <h4 class="card-title">Potensi Hujan Sedang-Lebat di Sejumlah Kota, Cek Info Selengkapnya!</h4>
-    <p class="card-description">Prakirawan BMKG melaporkan kondisi cuaca di 34 provinsi di Indonesia. Simak prakiraan cuaca lebih lanjut yang berlaku untuk hari Kamis, 12 Januari 2023.</p>
-    <a href="https://20.detik.com/detikupdate/20230112-230112048/potensi-hujan-sedang-lebat-di-sejumlah-kota-cek-info-selengkapnya" target="_blank">Baca Selengkapnya</a>
-  </div>
-
-  <!-- Card 3 -->
-  <div class="card">
-    <img src="assets/card-image/berita-3.jpeg" alt="Berita 3">
-    <h4 class="card-title">Potensi Cuaca Sepekan di Indonesia Pada Umumnya</h4>
-    <p class="card-description">Khusus untuk wilayah Sulawesi Selatan, potensi hujan intensitas sedang-lebat yang dapat disertai kilat/petir dan angin kencang dapat terjadi di sebagian besar Sulawesi Selatan.</p>
-    <a href="your_read_more_link">Baca Selengkapnya</a>
-  </div>
-
-  <!-- Card 4 -->
-  <div class="card">
-    <img src="assets/card-image/berita-4.jpg" alt="Berita 4">
-    <h4 class="card-title">Prakiraan Cuaca Jogja Hari Ini, Waspadai Potensi Hujan Lebat dan Angin Kencang</h4>
-    <p class="card-description">Badan Meteorologi Klimatologi dan Geofisika (BMKG) memperkirakan cuaca Yogyakarta cerah berawan selengkapnya prakiraan cuaca BMKG untuk wilayah Yogyakarta pada hari ini</p>
-    <a href="https://jogja.jpnn.com/jogja-terkini/3895/prakiraan-cuaca-yogyakarta-hari-ini-16-juli-2022">Baca Selengkapnya</a>
-  </div>
-
-  <!-- Card 5 -->
-  <div class="card">
-    <img src="assets/card-image/berita-5.jpeg" alt="Berita 5">
-    <h4 class="card-title">Prakiraan Cuaca Jogja Hari Ini, Waspadai Potensi Hujan Lebat dan Angin Kencang</h4>
-    <p class="card-description">Badan Metorologi, Klimatologi, dan Geofisika (BMKG) dalam laman resminya, bmkg.go.id memperkirakan, cuaca Yogyakarta cerah berawan hingga hujan dengan intensitas ringan.</p>
-    <a href="https://gudeg.net/read/17828/prakiraan-cuaca-jogja-hari-ini-waspadai-potensi-hujan-lebat-dan-angin-kencang.html">Baca Selengkapnya</a>
-  </div>
-
-  <!-- Card 6 -->
-  <div class="card">
-    <img src="assets/card-image/berita-6.jpg" alt="Berita 6">
-    <h4 class="card-title">Cuaca Indonesia Hari Ini Waspada Hujan Lebat Disertai Petir di Sejumlah Wilayah</h4>
-    <p class="card-description">Badan Meteorologi, Klimatologi, dan Geofisika (BMKG) mengungkap sebagian kota besar di Indonesia hari ini, Selasa (28/11/2023) akan turun hujan.</p>
-    <a href="https://www.liputan6.com/news/read/5466311/cuaca-indonesia-hari-ini-selasa-28-november-2023-waspada-hujan-lebat-disertai-petir-di-sejumlah-wilayah">Baca Selengkapnya</a>
-  </div>
-</div>
-
-<!-- Additional Card Section -->
-<div class="horizontal-card-container">
-  <!-- Card 7 -->
-  <div class="horizontal-card">
-    <img src="assets/card-image/berita-1.jpg" alt="Berita 7">
-    <h4 class="horizontal-card-title ">Judul Berita 7</h4>
-    <p class="horizontal-card-description">Deskripsi untuk Berita 7.</p>
-    <a href="your_read_more_link">Baca Selengkapnya</a>
-  </div>
-</div>
-<!-- Tentang Kami Section -->
-<div class="about-group">
-  <h1 class="news-title">Tentang Kami</h1>
-  <p class="news-tagline">Kami adalah tim yang berkomitmen mengembangkan dan memberikan informasi cuaca real-time dengan artikel terkait</p>
-</div>
-
-<!-- Cards Section -->
-<div class="about-container">
-  <!-- Row 1 -->
-  <div class="about">
-    <img src="assets/about-us/rizki-image.jpg" alt="Person 1" class="circular-image">
-    <h4 class="about-title-card">Muhammad Haikal</h4>
-    <p class="about-description-card">Full-Stack Developer</p>
-    <div class="social-icons">
-      <a href="link_to_github" target="_blank"><img src="assets/icons/github-icon.png" alt="GitHub"></a>
-      <a href="link_to_linkedin" target="_blank"><img src="assets/icons/linkedin-icon.png" alt="LinkedIn"></a>
-      <a href="link_to_instagram" target="_blank"><img src="assets/icons/instagram-icon.png" alt="Instagram"></a>
-      <a href="link_to_instagram" target="_blank"><img src="assets/icons/facebook-icon.png" alt="Facebook"></a>
-    </div>
-  </div>
-
-  <div class="about">
-    <img src="assets/about-us/rizki-image.jpg" alt="Person 1" class="circular-image">
-    <h4 class="about-title-card">Rizki Elfani Prasetya</h4>
-    <p class="about-description-card">Front-End Developer</p>
-    <div class="social-icons">
-      <a href="link_to_github" target="_blank"><img src="assets/icons/github-icon.png" alt="GitHub"></a>
-      <a href="link_to_linkedin" target="_blank"><img src="assets/icons/linkedin-icon.png" alt="LinkedIn"></a>
-      <a href="link_to_instagram" target="_blank"><img src="assets/icons/instagram-icon.png" alt="Instagram"></a>
-      <a href="link_to_instagram" target="_blank"><img src="assets/icons/facebook-icon.png" alt="Facebook"></a>
-    </div>
-  </div>
-
-  <div class="about">
-    <img src="assets/about-us/rizki-image.jpg" alt="Person 1" class="circular-image">
-    <h4 class="about-title-card">Mei Albert Zendrato</h4>
-    <p class="about-description-card">Front-End Developer</p>
-    <div class="social-icons">
-      <a href="link_to_github" target="_blank"><img src="assets/icons/github-icon.png" alt="GitHub"></a>
-      <a href="link_to_linkedin" target="_blank"><img src="assets/icons/linkedin-icon.png" alt="LinkedIn"></a>
-      <a href="link_to_instagram" target="_blank"><img src="assets/icons/instagram-icon.png" alt="Instagram"></a>
-      <a href="link_to_instagram" target="_blank"><img src="assets/icons/facebook-icon.png" alt="Facebook"></a>
-    </div>
-  </div>
-
-  <div class="about">
-    <img src="assets/about-us/rizki-image.jpg" alt="Person 1" class="circular-image">
-    <h4 class="about-title-card">Lutfi Husaeri</h4>
-    <p class="about-description-card">Front-End Developer</p>
-    <div class="social-icons">
-      <a href="link_to_github" target="_blank"><img src="assets/icons/github-icon.png" alt="GitHub"></a>
-      <a href="link_to_linkedin" target="_blank"><img src="assets/icons/linkedin-icon.png" alt="LinkedIn"></a>
-      <a href="link_to_instagram" target="_blank"><img src="assets/icons/instagram-icon.png" alt="Instagram"></a>
-      <a href="link_to_instagram" target="_blank"><img src="assets/icons/facebook-icon.png" alt="Facebook"></a>
-    </div>
-  </div>
-
-  <div class="about">
-    <img src="assets/about-us/rizki-image.jpg" alt="Person 1" class="circular-image">
-    <h4 class="about-title-card">Ade Nugraha</h4>
-    <p class="about-description-card">Front-End Developer</p>
-    <div class="social-icons">
-      <a href="link_to_github" target="_blank"><img src="assets/icons/github-icon.png" alt="GitHub"></a>
-      <a href="link_to_linkedin" target="_blank"><img src="assets/icons/linkedin-icon.png" alt="LinkedIn"></a>
-      <a href="link_to_instagram" target="_blank"><img src="assets/icons/instagram-icon.png" alt="Instagram"></a>
-      <a href="link_to_instagram" target="_blank"><img src="assets/icons/facebook-icon.png" alt="Facebook"></a>
-    </div>
-  </div> 
-</div>
 <footer>
   <p>WeaTrack - Capstone Project <a>C523-PS059</a></p>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
