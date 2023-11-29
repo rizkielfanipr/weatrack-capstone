@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/images-home.png" type="image/png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <title>WeaTrack</title>
+  </head>
+
+<body>
+
+    <header class="app-bar">
+        <div class="app-bar__menu">
+            <button class="hamburger" id="hamburgerButton">☰</button>
+        </div>
+        <div class="app-bar__brand">
+          <h1>WeaTrack</h1>
+        </div>
+        <nav id="navigationDrawer" class="app-bar__navigation">
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="berita.html">Berita</a></li>
+            <li><a href="cuaca.html">Cuaca</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+          </ul>
+    </header>
+
+    <div class="search-group">
+        <h1 class="search-title">Cuaca Terkini</h1>
+        <p class="search-tagline">Cek prediksi cuaca terkini berdasarkan wilayah secara real-time</p>
+    </div>
+
+    <div class="container">
+        <div class="location">
+            <i class='bx bxs-map'></i>
+            <input type="text" placeholder="Telusuri">
+            <button class='bx bx-search'></button>
+        </div>
+
+        <div class="not-found">
+            <img src="assets/images/404.png">
+            <p>Lokasi Tidak Ditemukan!!</p>
+        </div>
+
+        <div class="weather-box">
+            <img src="">
+            <p class="suhu"></p>
+            <p class="deskripsi">Suhu</p>
+        </div>
+
+        <div class="weather-details">
+            <div class="humidity">
+                <i class='bx bx-water'></i>
+                <div class="text">
+                    <span></span>
+                    <p>Kelembaban</p>
+                </div>
+            </div>
+
+            <div class="wind">
+                <i class='bx bx-wind'></i>
+                <div class="text">
+                    <span></span>
+                    <p>Kecepatan Angin</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
