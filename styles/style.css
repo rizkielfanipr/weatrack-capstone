@@ -6,8 +6,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: white;
-  min-height: 100vh;
-  display: flex;
+  display: grid;
   flex-direction: column;
 }
 
@@ -85,17 +84,24 @@ a {
 
 @media only screen and (max-width: 768px) {
     .nav-menu {
-        z-index: 900;
-        position: fixed;
-        left: -100%;
-        top: 5rem;
-        flex-direction: column;
-        background-color: #B4B1A5;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        opacity: 80%;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+      justify-content: space-between;
+      align-items: center;
+      z-index: 900;
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: #B4B1A5;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+      opacity: 80%;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+
+      .about-container {
+        grid-template-columns: 1fr;
+        align-items: center;
+      }
     }
 
     .nav-menu.active {
@@ -134,7 +140,6 @@ a {
     position: relative;
     display: flex;
     align-items: center;
-    min-height: 100vh;
     width: 100%;
     text-align: center;
     background-image: url("../assets/images/background-weatrack.jpg");
@@ -383,16 +388,32 @@ a {
     margin-bottom: 10px;
   }
   
+  .about-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: center;
+  }
+  
+  
+  .circular-image {
+    border-radius: 50%;
+    max-width: 100%;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
+  
+  
   .about-group {
-    position: absolute;
-    width: 527px;
     height: 125px;
-    top: 2500px; 
     left: 50%;
     transform: translateX(-50%);
   }
   
-  .about-title {
+  .about-title-card {
     font-family: "Poppins-SemiBold", Helvetica;
     color: #00a0ab;
     font-size: 50px;
@@ -400,6 +421,8 @@ a {
     line-height: normal;
     margin: 0; 
     text-align: center;
+    font-size: 24px;
+    margin-bottom: 5px;
   }
   
   .about-tagline {
@@ -411,16 +434,10 @@ a {
     line-height: normal;
     margin-top: 10px; 
   }
-
-  
-  .about-container {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 200px;
-  }
   
   .about {
+    height: 250px;
+    width: 240px;
     text-align: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
     padding: 20px;
@@ -433,11 +450,6 @@ a {
     height: 100px;
     object-fit: cover;
     margin-bottom: 10px;
-  }
-  
-  .about-title {
-    font-size: 24px;
-    margin-bottom: 5px;
   }
   
   .about-description {
