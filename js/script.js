@@ -1,25 +1,24 @@
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-const navLink = document.querySelectorAll(".nav-link");
+const hamburger = document.getElementById('hamburgerButton');
+const navMenu = document.getElementById('navigationDrawer');
+const navLinks = document.querySelectorAll('.app-bar__navigation ul li a');
 const container = document.querySelector('.container');
 const search = document.querySelector('.location button');
 const weatherBox = document.querySelector('.weather-box');
 const weatherDetails = document.querySelector('.weather-details');
 const error = document.querySelector('.not-found');
-hamburger.addEventListener("click", mobileMenu);
-navLink.forEach(n => n.addEventListener("click", closeMenu));
 
+hamburger.addEventListener('click', mobileMenu);
+navLinks.forEach(n => n.addEventListener('click', closeMenu));
 
 function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('open'); 
 }
 
 function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('open');
 }
-
 
 search.addEventListener('click', () => {
 

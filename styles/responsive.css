@@ -27,52 +27,68 @@
       text-align: center;
       margin: 0;
     }
-  
-    .movies {
-      grid-template-columns: 1fr 1fr;
-  
-    }
-  
-    .movie {
-      grid-template-columns: auto 1fr;
-    }
-  
-    .movie .movie__title {
-      grid-column-start: 1;
-      grid-column-end: 3;
-    }
-  
-    .movie .movie__overview {
-      grid-column-start: 1;
-      grid-column-end: 3;
-    }
-  
-    footer #footerTools {
-      flex-direction: row;
-    }
   }
   
   @media screen and (min-width: 800px) {
     .app-bar .app-bar__brand h1 {
-      font-size: 2em;
+      font-size: 20px;
     }
   }
   
-  @media screen and (min-width: 850px) {
-    .movies {
-      grid-template-columns: repeat(3, 1fr);
-    }
+
+
+@media only screen and (max-width: 768px) {
+  .app-bar .app-bar__navigation {
+    width: 100%;
+    left: -100%;
   }
-  
-  @media screen and (min-width: 1200px) {
-    .movies {
-      grid-template-columns: repeat(4, 1fr);
-    }
+
+  .app-bar .app-bar__navigation.open {
+    left: 0;
   }
-  
-  @media screen and (min-width: 1600px) {
-    .movies {
-      grid-template-columns: repeat(5, 1fr);
-    }
+
+  .jumbotron .jumbotron-inner {
+    margin: -120px 20px 0 20px;
   }
-  
+
+  .get-started-button {
+    margin-top: 20px; 
+  }
+
+  .illustration-image {
+    right: 20px;
+    position: static; 
+    margin-top: 20px; 
+  }
+
+  .news-group,
+  .search-group,
+  .about-group {
+    width: 90%;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .weather-box img {
+    width: 100%;
+  }
+
+  .weather-details,
+  .weather-box,
+  .not-found {
+    margin-top: 20px;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .about {
+    width: 60%; 
+    margin-bottom: 20px;
+  }
+}
