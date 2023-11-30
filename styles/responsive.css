@@ -33,6 +33,7 @@
     .app-bar .app-bar__brand h1 {
       font-size: 20px;
     }
+
   }
   
 
@@ -61,8 +62,49 @@
     margin-top: 20px; 
   }
 
+  .search-group {
+    text-align: center; 
+    transform: translateX(-50%);
+  }
+  
+  .search-title {
+    font-family: "Poppins-SemiBold", Helvetica;
+    color: #00a0ab;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+    margin: 30px auto 0;
+    text-align: center;
+  }
+  
+  .search-tagline {
+    font-family: "Poppins-Regular", Helvetica;
+    color: #000000;
+    font-size: 11px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: 10px; 
+    width: 100%;
+  }
+
+  .container {
+    margin: 50px auto 70px auto;
+    width: 400px;
+    height: 105px;
+    background: #fff;
+    padding: 28px 32px;
+    border-radius: 18px;
+    font-family: "Poppins-Regular", Helvetica;
+    transition: 0.6s ease-out;
+    flex-direction: column;
+    margin-top: 240px;
+    margin-bottom: 2px;
+    width: 85%;
+    box-shadow: 0.5px 2px 4px 6px rgba(0, 0, 0, 0.1); 
+  }  
+
   .news-group,
-  .search-group,
   .about-group {
     width: 90%;
   }
