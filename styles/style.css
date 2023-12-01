@@ -578,6 +578,28 @@ body {
   animation-delay: 0.5s;
 }
 
+
+.weather-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-content: center;
+  margin: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.weather-card {
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+  padding: 20px;
+  border-radius: 8px; 
+}
+
+.weather-card h2 {
+  margin-bottom: 10px;
+}
+
 @keyframes fadeIn{
   to {
       scale: 1;

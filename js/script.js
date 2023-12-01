@@ -89,3 +89,39 @@ search.addEventListener('click', () => {
         });
 
 });
+
+const APIKey = '16373fe4912ffec0aa7b818b7b0a0457';
+const cities = ['Bandung', 'Jakarta', 'Medan', 'Tangerang', 'Surabaya', 'Solo', 'Bali', 'Yogyakarta', 'Makasar'];
+
+document.addEventListener('DOMContentLoaded', fetchWeatherData);
+
+function fetchWeatherData() {
+  const weatherContainer = document.getElementById('weatherContainer');
+
+  cities.forEach(city => {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`)
+      .then(response => response.json())
+      .then(data => {
+        displayWeather(weatherContainer, city, data);
+      })
+      .catch(error => {
+        console.error(`Error fetching weather data for ${city}:`, error);
+      });
+  });
+}
+
+function displayWeather(container, city, data) {
+  const weatherCard = document.createElement('div');
+  weatherCard.classList.add('weather-card');
+
+  const cityName = data.name;
+  const temperature = data.main.temp;
+  const description = data.weather[0].description;
+
+  const weatherHtml = `<h2>${cityName}</h2>
+                       <p>Temperatur: ${temperature}°C</p>
+                       <p>Weater: ${description}</p>`;
+
+  weatherCard.innerHTML = weatherHtml;
+  container.appendChild(weatherCard);
+}
