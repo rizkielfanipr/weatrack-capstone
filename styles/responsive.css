@@ -121,6 +121,21 @@
   .weather-box,
   .not-found {
     margin-top: 20px;
+
+  }.weather-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .weather-card {
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    border-radius: 8px; 
   }
 
   .about-container {
