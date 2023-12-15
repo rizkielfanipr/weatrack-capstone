@@ -1,0 +1,21 @@
+{
+    "name": "weatrack-v1",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#f8fcfa",
+    "background_color": "#f8fcfa",
+    "icons": [
+      {
+        "src": "assets/images/images-home.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "assets/images/images-home1.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "maskable"
+      }
+    ]
+  }
+  

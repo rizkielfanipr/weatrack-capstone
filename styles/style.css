@@ -13,6 +13,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  flex: 1; 
 }
 
 /*
@@ -100,6 +101,7 @@ body {
     display: flex;
     align-items: center;
     min-height: 100vh;
+    margin-top: 50px;
     width: 100%;
     text-align: center;
     background-image: url("../assets/images/background-weatrack.jpg");
@@ -311,7 +313,27 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
     padding: 20px;
     border-radius: 8px; 
-  }  
+  }
+
+  .about {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease; 
+  }
+  
+  .about:hover {
+    transform: scale(1.05); 
+  }
+  
+  .about:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
   
   .circular-image {
     border-radius: 50%;
@@ -361,13 +383,13 @@ body {
 
   footer {
     padding: 16px;
-    margin-top: 50px;
     background-color: #00a0ab;
-    min-height: 100px; 
+    min-height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: auto; 
   }
   
   footer p {
@@ -548,6 +570,16 @@ body {
   font-weight: 500;
 }
 
+.weather-image {
+  margin-bottom: 10px;
+}
+
+.weather-image img {
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%;
+}
+
 .not-found{
   width: 100%;
   text-align: center;
@@ -576,6 +608,28 @@ body {
 .fadeIn{
   animation: 0.5s fadeIn forwards;
   animation-delay: 0.5s;
+}
+
+
+.weather-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-content: center;
+  margin: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.weather-card {
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+  padding: 20px;
+  border-radius: 8px; 
+}
+
+.weather-card h2 {
+  margin-bottom: 10px;
 }
 
 @keyframes fadeIn{
