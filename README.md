@@ -27,8 +27,3 @@ WeaTrack adalah proyek capstone yang bertujuan menyediakan platform informasi cu
 3. **Halaman Berita**
 - Navigasikan ke halaman berita melalui opsi "Berita" pada navbar.
 - Klik "Baca Selengkapnya" pada artikel yang ingin Anda baca dengan detail.
-<<<<<<< HEAD
-- Anda akan diarahkan ke sumber artikel untuk melihat keseluruhan isi.
-=======
-- Anda akan diarahkan ke sumber artikel untuk melihat keseluruhan isi.
->>>>>>> 77b5819ca644c87f64fdfe93d9edf4473288a2bf
