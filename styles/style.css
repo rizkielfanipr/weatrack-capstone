@@ -635,6 +635,24 @@ body {
   margin-bottom: 10px;
 }
 
+.special-heading {
+  color: #00A1AB;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.special-heading + p {
+  text-align: center; 
+}
+
+.special-heading + p a {
+  color: #00A1AB; 
+  text-decoration: none;
+  font-weight: bold; 
+  font-style: italic;
+}
 @keyframes fadeIn {
   to {
     scale: 1;

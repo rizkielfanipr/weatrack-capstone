@@ -65,7 +65,7 @@
   .search-title {
     font-family: "Poppins-SemiBold", Helvetica;
     color: #00a0ab;
-    font-size: 36px;
+    font-size: 30px;
     letter-spacing: 0;
     line-height: normal;
     margin: 30px auto 0;
@@ -75,7 +75,7 @@
   .search-tagline {
     font-family: "Poppins-Regular", Helvetica;
     color: #000000;
-    font-size: 11px;
+    font-size: 14px;
     text-align: center;
     letter-spacing: 0;
     line-height: normal;
@@ -149,11 +149,23 @@
 @media (max-width: 768px) {
   .news-tagline {
     font-size: 14px;
-    margin-top: 5px;
+    margin-top: 10px;
     white-space: normal;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
     -webkit-line-clamp: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .special-heading {
+      font-size: 20px;
+      margin-top: 50px;
+      margin-bottom: 10px;
+  }
+
+  .special-heading + p a {
+    font-size: 14px;
   }
 }
