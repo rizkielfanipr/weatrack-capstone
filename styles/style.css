@@ -628,7 +628,7 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
   padding: 30px;
   border-radius: 8px;
-  margin: 10px; /* Menambahkan margin pada elemen .weather-card */
+  margin: 10px; 
 }
 
 .weather-card h2 {

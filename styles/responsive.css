@@ -1,42 +1,39 @@
 @media screen and (min-width: 650px) {
-    .app-bar {
-      grid-template-columns: 1fr auto;
-      padding: 8px 32px;
-    }
-  
-    .app-bar .app-bar__brand h1 {
-      font-size: 1.5em;
-    }
-  
-    .app-bar .app-bar__menu {
-      display: none;
-    }
-  
-    .app-bar .app-bar__navigation {
-      position: static;
-      width: 100%;
-    }
-  
-    .app-bar .app-bar__navigation ul li {
-      display: inline-block;
-    }
-  
-    .app-bar .app-bar__navigation ul li a {
-      display: inline-block;
-      width: 120px;
-      text-align: center;
-      margin: 0;
-    }
+  .app-bar {
+    grid-template-columns: 1fr auto;
+    padding: 8px 32px;
   }
-  
-  @media screen and (min-width: 800px) {
-    .app-bar .app-bar__brand h1 {
-      font-size: 20px;
-    }
 
+  .app-bar .app-bar__brand h1 {
+    font-size: 1.5em;
   }
-  
 
+  .app-bar .app-bar__menu {
+    display: none;
+  }
+
+  .app-bar .app-bar__navigation {
+    position: static;
+    width: 100%;
+  }
+
+  .app-bar .app-bar__navigation ul li {
+    display: inline-block;
+  }
+
+  .app-bar .app-bar__navigation ul li a {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .app-bar .app-bar__brand h1 {
+    font-size: 20px;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .app-bar .app-bar__navigation {
@@ -49,24 +46,22 @@
   }
 
   .jumbotron .jumbotron-inner {
-    margin: -120px 20px 0 20px;
-  }
-
-  .get-started-button {
-    margin-top: 20px; 
+    margin: -120px 20px 0 50px;
   }
 
   .illustration-image {
-    right: 20px;
-    position: static; 
-    margin-top: 20px; 
+    display: none;
+  }
+
+  .get-started-button {
+    margin-top: 20px;
   }
 
   .search-group {
-    text-align: center; 
+    text-align: center;
     transform: translateX(-50%);
   }
-  
+
   .search-title {
     font-family: "Poppins-SemiBold", Helvetica;
     color: #00a0ab;
@@ -76,7 +71,7 @@
     margin: 30px auto 0;
     text-align: center;
   }
-  
+
   .search-tagline {
     font-family: "Poppins-Regular", Helvetica;
     color: #000000;
@@ -84,7 +79,7 @@
     text-align: center;
     letter-spacing: 0;
     line-height: normal;
-    margin-top: 10px; 
+    margin-top: 10px;
     width: 100%;
   }
 
@@ -101,8 +96,8 @@
     margin-top: 240px;
     margin-bottom: 2px;
     width: 85%;
-    box-shadow: 0.5px 2px 4px 6px rgba(0, 0, 0, 0.1); 
-  }  
+    box-shadow: 0.5px 2px 4px 6px rgba(0, 0, 0, 0.1);
+  }
 
   .news-group,
   .about-group {
@@ -121,8 +116,9 @@
   .weather-box,
   .not-found {
     margin-top: 20px;
+  }
 
-  }.weather-container {
+  .weather-container {
     grid-template-columns: 1fr;
     gap: 20px;
     justify-content: center;
@@ -130,22 +126,34 @@
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  
+
   .weather-card {
     text-align: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    border-radius: 8px; 
+    border-radius: 8px;
   }
 
   .about-container {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
   }
 
   .about {
-    width: 60%; 
+    width: 60%;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-tagline {
+    font-size: 14px;
+    margin-top: 5px;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
   }
 }
